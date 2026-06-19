@@ -47,7 +47,7 @@ Projeto desenvolvido para auxiliar no cadastro e organização de treinos físic
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Valakzz/TrabalhoWebFinalAcademy/tree/main
 ```
 
 ### 2. Acesse a pasta
