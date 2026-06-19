@@ -1,0 +1,9 @@
+
+CREATE TABLE treinos (
+    id_treino SERIAL PRIMARY KEY,
+    cpf VARCHAR(14) NOT NULL,
+    exercicio VARCHAR(100) NOT NULL,
+    series INT NOT NULL,
+    repeticoes INT NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

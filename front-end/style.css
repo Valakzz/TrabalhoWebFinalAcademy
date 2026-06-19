@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.logo img{
+    max-height: 60px;
+    width: auto;
+    border-radius: 30px;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f0f0f;
+
+}
+
+.navbar{
+    width:100%;
+    padding:20px;
+}
+
+.nav-container{
+    max-width:1000px;
+    margin:auto;
+    background:#1b1b1b;
+    border-radius:40px;
+    padding:15px 30px;
+     gap: 20px;
+    display:flex;
+   
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-weight:bold;
+   
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    
+    
+}
+
+.nav-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+
+    padding: 10px 20px;
+}
+
+.nav-links a.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:100%;
+    height:2px;
+    background:white;
+    color: aqua;
+}
+
+.auth-buttons button{
+    padding:8px 16px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.infos{
+
+    display: flex;
+    color: aliceblue;
+    font-size: 25px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.nav-links a:hover{
+    color: rgb(231, 46, 33);
+    
+}
+
+.buttonsTraining button{
+    background-color: rgb(48, 16, 16);
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    color: aliceblue;
+    margin-top: 15px;
+    
+}
+
+
+.addTraining {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+
+
+.newTraining {
+    animation: fadeIn 0.3s ease;
+}
+
+.treino-card {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3e);
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.treino-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+
+.treino-card h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #991212;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+.treino-card label {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+
+.treino-card input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.treino-card input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px #667eea;
+}
+
+.treino-card input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-style: italic;
+}
+
+
+.treino-card button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.treino-card button:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.treino-card button:active {
+    transform: scale(0.98);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+    
+
+
+
+
+.TrainingSaved {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.treino-salvo-card {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3e);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.treino-salvo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.treino-salvo-card h3 {
+    color: #c9c8c4;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.treino-salvo-card p {
+    margin: 8px 0;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.treino-salvo-card button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    background: #e74c3c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.treino-salvo-card button:hover {
+    background: #c0392b;
+}
+
+
+.loading, .sem-treinos, .erro {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 1rem;
+}
+
+.loading {
+    color: #ffd700;
+}
+
+.erro {
+    color: #ff6b6b;
+}
+
